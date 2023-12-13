@@ -1,5 +1,5 @@
 import axios from 'axios';
-const URL='http://localhost:8000';
+const URL='https://hm-flipkart-clone-backend.vercel.app';
 export async function authenticateSignup(data){
     try {
         return await axios.post(`${URL}/signup`,data)

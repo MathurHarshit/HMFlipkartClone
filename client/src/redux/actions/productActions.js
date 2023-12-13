@@ -1,6 +1,6 @@
 import axios from "axios";
 import * as actionType from '../constants/productConstant'
-const URL='http://localhost:8000';
+const URL='https://hm-flipkart-clone-backend.vercel.app';
 export const getProducts=()=>async(dispatch)=>{
     try {
         const {data}= await axios.get(`${URL}/products`);
