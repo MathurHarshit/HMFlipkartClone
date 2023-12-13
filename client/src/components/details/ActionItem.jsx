@@ -54,7 +54,7 @@ function ActionItem({ product }) {
   function handlePayment(sessionId){
     let checkoutOptions = {
       paymentSessionId: sessionId,
-      returnUrl: "http://localhost:3000",
+      returnUrl: "https://hm-flipkart-clone.vercel.app",
       
   }   
   cashfree.checkout(checkoutOptions).then(function(result){
