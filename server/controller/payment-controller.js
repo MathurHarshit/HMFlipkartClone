@@ -20,7 +20,7 @@ export const newOrderId = async (req, res) => {
         customer_details: {
           customer_id: "CID89898" + Date.now(),
           customer_email: req.body.custDetails.email || 'customer@gmail.com',
-          customer_phone: req.body.custDetails.mobilenumber || '1234567896',
+          customer_phone: "+91"+req.body.custDetails.mobilenumber || '+911234567896',
           customer_name:req.body.custDetails.firstname+" "+req.body.custDetails.lastname || 'customer'
         },
         order_meta: {
